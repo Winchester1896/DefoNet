@@ -1,0 +1,35 @@
+Defoliation Dataset
+Published by Zichen Zhang, Sami Khanal, and Christopher Stewart
+
+This dataset contains RGB images of crop fields growing soybean.  The images have been labeled according to the
+degree of defoliation present in the image.  Additional, labels can be added later.
+
+Importantly, this dataset is structured to support the OSU ICICLE Instistute Data and Model Commons.  The Data 
+Commons stores datasets and their metadata together to support download and sharing between researchers.  The
+Model Commons allows interested parties to search for models that perform well on representative datasets for
+use in their domain.
+
+Organization:
+
+-- Subdirectory: RawData
+
+This subdirectory contains the collected images and labels.  Here, these have been compressed into a Zip file.
+
+-- Subdirectory: Datasheet
+
+This subdirectory contains a YAML file describing salient qualitative characteristics of the dataset.  See 
+the Datasheets for Datasets paper for more details (https://arxiv.org/abs/1803.09010).  As additional labels
+are added/identified for the dataset, more YAML files can be added here.
+
+-- Sub Directory: Summary
+
+This subdirectory contains a YAML file characterizing the results of models (machine learned or hand-crafted)
+that have been tested using the dataset.  Again, more YAML files can be added as models grow.
+
+-- Subdirectory: Reference
+
+This subdirectory contains a YAML file with pointers to models that have been executed in the past.  In some
+cases, the models may be saved to files in the rawmodels directory for convenience.  When possible, we prefer
+to save models in Docker containers for easy reuse and fewer dependency concerns.
+
+
