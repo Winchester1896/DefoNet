@@ -1,6 +1,7 @@
 data title: soybean leaf defoliation data set
 physical properties:
   ownership: Zichen Zhang
+  data purpose: image classification
   data informatioin:
     number of classes: '2'
     data size: '97395'
